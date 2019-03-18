@@ -11,7 +11,7 @@ BATCH_SIZE = 64
 TAU = 5e-2
 GAMMA = 0.99
 UPDATE_EVERY = 4
-LR = 5e-4
+LR = 5e-5
 DEVICE = 'cpu' # CPU's are faster for GYM envs
 
 
