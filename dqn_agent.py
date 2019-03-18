@@ -93,7 +93,7 @@ class REPLAY_MEMORY:
         actions = torch.from_numpy(np.vstack([e.action for e in samples if e is not None])).long().to(DEVICE)
         next_states = torch.from_numpy(np.vstack([e.next_state for e in samples if e is not None])).float().to(DEVICE)
         rewards = torch.from_numpy(np.vstack([e.reward for e in samples if e is not None])).float().to(DEVICE)
-        dones = torch.from_numpy(np.vstack([e.done for e in samples if e is not None]).astype(uint8)).float().to(DEVICE)
+        dones = torch.from_numpy(np.vstack([e.done for e in samples if e is not None]).astype(np.uint8)).float().to(DEVICE)
         return (states, actions, next_states, rewards, dones)
 
 
