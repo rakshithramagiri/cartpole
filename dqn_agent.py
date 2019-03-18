@@ -6,7 +6,7 @@ from collections import deque, namedtuple
 from model import DQ_NETWORK
 
 
-BUFFER_SIZE = int(1e6)
+BUFFER_SIZE = int(3e5)
 BATCH_SIZE = 64
 TAU = 1e-3
 GAMMA = 0.99
