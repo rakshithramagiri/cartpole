@@ -8,7 +8,7 @@ from model import DQ_NETWORK
 
 BUFFER_SIZE = int(3e5)
 BATCH_SIZE = 64
-TAU = 1e-3
+TAU = 5e-2
 GAMMA = 0.99
 UPDATE_EVERY = 4
 LR = 5e-4
