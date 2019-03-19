@@ -50,6 +50,8 @@ class HC_AGENT:
             self.noise_scale = min(2, self.noise_scale*2)
             self.update_policy_weights(regress=True)
 
+        self.rewards = list()
+
 
     def update_policy_weights(self, regress=False):
         if regress:
