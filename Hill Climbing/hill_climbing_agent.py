@@ -47,7 +47,7 @@ class HC_AGENT:
             self.noise_scale = max(1e-3, self.noise_scale/2)
             self.update_policy_weights()
         else:
-            self.noise_scale = min(2, noise_scale*2)
+            self.noise_scale = min(2, self.noise_scale*2)
             self.update_policy_weights(regress=True)
 
 
