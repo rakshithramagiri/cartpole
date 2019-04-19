@@ -3,7 +3,7 @@ import numpy as np
 import torch.nn as nn
 
 
-class Policy(nn.Module):
+class POLICY(nn.Module):
     def __init__(self, state_space, action_space, hidden=16):
         super(Policy, self).__init__()
 
