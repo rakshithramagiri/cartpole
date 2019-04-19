@@ -5,7 +5,7 @@ import torch.nn as nn
 
 class POLICY(nn.Module):
     def __init__(self, state_space, action_space, seed, hidden=16):
-        super(Policy, self).__init__()
+        super(POLICY, self).__init__()
 
         self.state_space = state_space
         self.hidden = hidden
