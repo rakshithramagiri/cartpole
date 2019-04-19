@@ -4,7 +4,7 @@ import torch.nn as nn
 
 
 class Policy(nn.Module):
-    def __init__(self, state_space, hidden=16, action_space):
+    def __init__(self, state_space, action_space, hidden=16):
         super(Policy, self).__init__()
 
         self.state_space = state_space
